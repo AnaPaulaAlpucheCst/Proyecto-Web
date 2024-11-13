@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Bitstream Vera Sans Bold; 
+  }
+  
+  .container {
+    min-height: 100vh; 
+    background-color: #034d54;
+    color: #f7f4f2;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+  }
+  
+ .perfil-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .perfil-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .etiqueta {
+    font-size: 1em;
+  }
+  
+  .entrada {
+    padding: 8px;
+    background-color: #f7f4f2;
+    color: #034d54;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+
+  .optional-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .button {
+    width: 100%; 
+    background-color: black;
+    color: #f7f4f2;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .button:hover {
+    background-color: #f7f4f2;
+    color: #034d54;
+ }
+
+ .button2 {
+    width: 100%; 
+    background-color: black;
+    color: #f7f4f2;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 40px;
+  }
+
+  .button2:hover {
+    background-color: #f7f4f2;
+    color: #034d54;
+  }
+
+  .button2:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+  }

@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}   
+
+.contenido {
+    overflow: hidden;
+    background-color: #034d54;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    color: #f7f4f2;
+    min-height: 150vh;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.search-bar input {
+    padding: 5px;
+    background-color: #f7f4f2;
+    color: #034d54;
+    border: none;
+    border-radius: 5px;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    background-color: #62b0ac;
+    color: #f7f4f2;
+    border-radius: 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #f7f4f2;
+    color: #034d54;
+    cursor: pointer;
+}
+
+.detalles {
+    font-family: Bitstream Vera Sans Bold;
+    font-size: 1em;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.detalles:hover {
+    text-decoration: underline;
+}
+
+.ver-mas {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ver-mas button {
+    background-color: black;
+    color: #f7f4f2;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300%;
+}
+
+.ver-mas button:hover {
+    background-color: #f7f4f2;
+    color: black;
+}
+
+@media (width >= 1300px) {
+    .seccion {
+        width: 100%;
+        margin-bottom: 5%;
+        margin-top: 3%;
+    }
+    
+    .productos {
+        gap: 5%;
+    }
+
+    .seccion img {
+        height: 350px;
+        width: 240px;
+    }
+}
+
+@media (1200px < width < 1300px) {
+    .seccion {
+        width: 100%;
+        margin-bottom: 5%;
+        margin-top: 3%;
+    }
+    
+    .productos {
+        gap: 4%;
+    }
+
+    .seccion img {
+        height: 350px;
+        width: 240px;
+    }
+}
+
+@media (1023px < width < 1201px) {
+    .seccion {
+        width: 100%;
+        margin-bottom: 4%;
+        margin-right: 5%;
+        margin-top: 3%;
+    }
+    
+    .productos {
+        gap: 3%;
+    }
+
+    .seccion img {
+        height: 330px;
+        width: 220px;
+    }
+}
+
+@media (930px < width < 1024px) {
+    .seccion {
+        margin-bottom: 4%;
+        margin-top: 3%;
+    }
+    
+    .productos {
+        gap: 3%;
+    }
+
+    .seccion img {
+        height: 300px;
+        width: 200px;
+    }
+}
+
+@media (850px < width < 931px) {
+    .seccion {
+        margin-bottom: 4%;
+        margin-top: 3%;
+    }
+    
+    .productos {
+        gap: 3%;
+    }
+
+    .seccion img {
+        height: 270px;
+        width: 180px;
+    }
+}
+
+@media (780px < width < 851px) {
+    .seccion {
+        margin-bottom: 4%;
+        margin-top: 3%;
+    }
+    
+    .productos {
+        gap: 3%;
+    }
+
+    .seccion img {
+        height: 240px;
+        width: 160px;
+    }
+}
+
+@media (680px < width < 781px) {
+    .seccion {
+        margin-bottom: 4%;
+        margin-top: 3%;
+    }
+    
+    .productos {
+        gap: 3%;
+    }
+
+    .seccion img {
+        height: 210px;
+        width: 140px;
+    }
+}
+
+@media (width <= 680px) {
+    .seccion {
+        margin-bottom: 4%;
+    }
+    
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 5%; 
+        justify-content: center;
+        margin-top: 10%;
+    }
+
+    .producto {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px; 
+    }
+
+    .seccion img {
+        height: 300px;
+        width: 200px;
+    }
+
+    .ver-mas {
+        margin-top: 90px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

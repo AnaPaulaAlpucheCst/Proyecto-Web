@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Bitstream Vera Sans Bold; 
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-side {
+    width: 60%;
+    background-color: #f7f4f2;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 20%;
+    height: 20%;
+  }
+  
+  .main-title {
+    color: #034d54;
+    font-size: 2em;
+    line-height: 1.2;
+  }
+  
+  .subtitle {
+    color: #800020;
+    margin: 5px 0;
+  }
+  
+  .books-image {
+    width: 70%;
+    height: 50%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .right-side {
+    width: 40%;
+    background-color: #034d54;
+    color: #f7f4f2;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    font-size: 1em;
+  }
+  
+  input {
+    padding: 8px;
+    background-color: #f7f4f2;
+    color: #034d54;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .login-button {
+    width: 100%; 
+    background-color: black;
+    color: #f7f4f2;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .login-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  .create-account-button {
+    width: 80%;
+    background-color: #034d54;
+    color: #f7f4f2;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #f7f4f2;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+  

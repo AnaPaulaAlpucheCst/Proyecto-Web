@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.carritoTitle {     
+    text-align: center;  
+    font-family: Bitstream Vera Sans Bold;
+    color:#f7f4f2;
+    font-size: 2em;
+    margin-top: 2%;
+    margin-bottom:2%;
+}
+
+.section {
+    padding-bottom:4%;
+    border:1px solid #034d54;
+    background-color: #034d54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pedido {
+    width: 80%;
+    background-color: #f7f4f2;
+    align-items: center;
+    padding:2%;      
+    height:auto;
+    margin-left:10%;
+    margin-right:10%;
+    border-radius:5px;
+    display: flex;
+    flex-direction: row;
+    border:1px solid #034d54;
+}
+
+.box1 {
+    width: 90%;
+    padding:1%;
+    justify-content: center;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 3px 20px;
+    height: 100%; 
+    border: 1px solid #034d54;
+    font-family: Arial, sans-serif;
+    line-height: 0.8;
+}
+
+.pago {
+    width: 80%; 
+    height: 20%;
+    font-size: 15px;
+    font-family: Verdana;
+    background-color: #62b0ac;
+    color: #f7f4f2;
+    border-radius: 7px;
+    margin-top: 2%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pago:hover {
+    background-color: #f7f4f2;
+    color: #034d54;
+    cursor: pointer;
+}
+
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+@media screen and (min-width: 1025px) {
+    .contenido{
+        overflow: hidden;
+    }
+
+    .pedido img{
+        height:220px;
+        margin-left:2%;
+        margin-right:2%;
+        border-radius: 10px;
+    }
+
+    .box1 {
+        height:250px;
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width: 1024px) {
+    .pedido img{
+        height:210px;
+        margin-left:2%;
+        margin-right:2%;
+        border-radius: 10px;
+    }
+
+    .box1 {
+        height:230px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 679px) {
+    .pedido img{
+        height:200px;
+        margin-left:2%;
+        margin-right:3%;
+        border-radius: 10px;
+    }
+
+    .box1 {
+        height:210px;
+    }
+}
